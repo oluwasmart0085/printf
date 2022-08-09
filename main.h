@@ -21,4 +21,5 @@ int call_function_manager(char aux, va_list arg);
 int check_percent(int *flag, char aux);
 int get_flag(char s, flags_t *f);
 int (*get_print(char s))(va_list, flags_t *);
+char *convert(unsigned long int num, int base, int lowercase)
 #endif
