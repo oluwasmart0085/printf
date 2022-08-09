@@ -24,4 +24,5 @@ int (*get_print(char s))(va_list, flags_t *);
 char *convert(unsigned long int num, int base, int lowercase);
 int get_precision(const char *format, int *i, va_list list);
 int get_size(const char *format, int *i);
+int get_width(const char *format, int *i, va_list list);
 #endif
