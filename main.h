@@ -18,7 +18,16 @@ int print_rev(va_list arg);
 int print_base16_upper_lower(va_list arg, char *representation);
 int loop_format(va_list arg, const char *string);
 int call_function_manager(char aux, va_list arg);
+<<<<<<< HEAD
 int check_percent(int *flag, char aux);	
+=======
+int check_percent(int *flag, char aux);
+<<<<<<< HEAD
+
+=======
+int get_flag(char s, flags_t *f);
+int (*get_print(char s))(va_list, flags_t *);
+>>>>>>> dfe8be5be7c4908b3c48725991cae68d14e5f00e
 char *convert(unsigned long int num, int base, int lowercase);
 int get_precision(const char *format, int *i, va_list list);
 int get_size(const char *format, int *i);
@@ -34,4 +43,5 @@ int write_number(int is_negative, int ind, char buffer[], int flags, int width, 
 int write_num(int ind, char buffer[], int flags, int width, int prec, int length, char padd, char extra_c);
 int write_unsgnd(int is_negative, int ind, char buffer[], int flags, int width, int precision, int size);
 int write_pointer(char buffer[], int ind, int length, int width, int flags, char padd, char extra_c, int padd_start);
+>>>>>>> af89fc8c3843a3197b0b597cb1446153c79dc9ac
 #endif
